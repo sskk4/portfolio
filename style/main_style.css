@@ -82,3 +82,9 @@
 {
     to{background-color: #b99cbe;}
 }
+
+@media screen and (max-width: 600px){
+
+    .menu-wskaznik{width:10%; margin-top:20px;}
+    
+    }

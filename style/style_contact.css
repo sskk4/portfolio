@@ -176,7 +176,7 @@ background: radial-gradient(circle, rgba(193,178,195,1) 0%, rgba(185,156,190,1) 
 
     font-size:30px;
     color:white;
-    font-family:Segoe UI;
+    font-family:Noto Sans;
     pointer-events: none;
     transition:1s;
     animation:pojawiasie 6s;

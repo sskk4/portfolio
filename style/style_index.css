@@ -139,7 +139,7 @@ html
     right:10%;
     font-size:72px;
     color:white;
-    font-family:Segoe UI;
+    font-family:Noto Sans;
     cursor:context-menu;
     transition:1s;
     animation:pojawiasie 3s;
@@ -158,3 +158,37 @@ html
 
 
 
+@media screen and (max-width: 600px){
+
+    .napis {
+        line-height: 50%;
+        text-align: center;
+        z-index: 50;
+        position: absolute;
+        font-size: 72px;
+        color: white;
+        font-family: Noto Sans;
+        cursor: context-menu;
+        transition: 1s;
+        animation: pojawiasie 3s;
+        transform-origin: top;
+        top: 30%;
+        left: 2%;
+      }
+
+      .gory2, .gory3, .gory4, .gory
+      {
+         
+          width:300%;
+          height: auto;
+          position:fixed;
+          bottom:0px;
+          
+         
+         pointer-events: none;
+transform-origin: bottom; 
+transition: transform 0.26s ease;
+      }
+       
+    
+    }

@@ -111,7 +111,7 @@ background: radial-gradient(circle, rgba(193,178,195,1) 0%, rgba(185,156,190,1) 
     right:10%;
     font-size:72px;
     color:white;
-    font-family:Segoe UI;
+    font-family:Noto Sans;
     cursor:context-menu;
     transition:1s;
     animation:pojawiasie 3s;
@@ -131,7 +131,7 @@ background: radial-gradient(circle, rgba(193,178,195,1) 0%, rgba(185,156,190,1) 
     transform: scaleY(1);
     font-size:20px;
     color:white;
-    font-family:Segoe UI;
+    font-family:Noto Sans;
     pointer-events: none;
     transition:1s;
     animation:pojawiasie 3s;
@@ -218,7 +218,7 @@ background: radial-gradient(circle, rgba(193,178,195,1) 0%, rgba(185,156,190,1) 
 
     font-size:20px;
     color:white;
-    font-family:Segoe UI;
+    font-family:Noto Sans;
     cursor:context-menu;
     transition:1s;
     animation:pojawiasie 3s;
@@ -251,3 +251,38 @@ background: radial-gradient(circle, rgba(193,178,195,1) 0%, rgba(185,156,190,1) 
         .napis2{top:15%; left:-20%;}
     
         }
+
+        @media screen and (max-width: 600px){
+
+            .napis {
+                line-height: 50%;
+                text-align: center;
+                z-index: 50;
+                position: absolute;
+                font-size: 50px;
+                color: white;
+                font-family: Noto Sans;
+                cursor: context-menu;
+                transition: 1s;
+                animation: pojawiasie 3s;
+                transform-origin: top;
+                top: 15%;
+                left: 2%;
+              }
+        .napis2 h2{visibility: hidden;}
+              .gory2, .gory3, .gory4, .gory
+              {
+                 
+                  width:300%;
+                  height: auto;
+                  position:fixed;
+                  bottom:0px;
+                  
+                 
+                 pointer-events: none;
+        transform-origin: bottom; 
+        transition: transform 0.26s ease;
+              }
+               
+            
+            }
