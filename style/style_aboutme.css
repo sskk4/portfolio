@@ -1,0 +1,154 @@
+html
+{
+    
+    height: 100%;
+}
+        body
+        {
+            min-width:450px;
+            width: 100%;
+            padding:0;
+            margin:0;
+            
+            
+            background: rgb(193,178,195);
+background: radial-gradient(circle, rgba(193,178,195,1) 0%, rgba(185,156,190,1) 100%);
+    
+        }
+
+      .napis_omnie
+      {
+        margin-bottom:-20px;
+      }
+
+        .tlo
+        {
+            width:100%;
+            height: 100%;
+         
+    
+        }
+      
+
+        .foto-gory, .foto-gory2, .foto-gory3, .foto-gory4
+        {
+            width:100%;
+            margin-bottom:-4px;
+           
+        }
+     
+    
+        .gory2, .gory3, .gory4, .gory
+        {
+           
+            width:100%;
+            height: auto;
+            position:fixed;
+            bottom:0px;
+            
+           
+           pointer-events: none;
+  transform-origin: bottom; 
+  transition: transform 0.26s ease;
+        }
+
+        .gory4
+        {
+            z-index:0;
+           
+            animation:pojawiasie 2s, wjazd  5s;
+        }
+
+        .gory3
+        {
+           z-index:-25;
+           
+           animation:wjazd  5s, pojawiasie 1s;
+
+        }
+
+        .gory2
+        {
+            z-index:-50;
+           
+            animation:wjazd 8s, pojawiasie 1s;
+   
+        }
+
+        .gory
+        {
+            z-index:-75;
+           
+            animation:wjazd 11s, pojawiasie 1s;
+        }
+
+@keyframes wjazd
+{
+    0%{bottom:-100%;}
+    100%{bottom:0;}
+}
+
+
+
+
+@keyframes pojawiasie
+{
+    0%{opacity:0;}
+    75%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+.napis
+{
+    line-height: 50%;
+    text-align: center;
+    z-index:100;
+    position:absolute;
+    top:15%;
+    right:10%;
+    font-size:72px;
+    color:white;
+    font-family:Segoe UI;
+    cursor:context-menu;
+    transition:1s;
+    animation:pojawiasie 3s;
+    transform-origin: top; 
+
+}
+
+.napis2
+{
+    
+    text-align: center;
+    z-index:50;
+    position:absolute;
+    top:15%;
+    left:15%;
+    font-size:20px;
+    color:white;
+    font-family:Segoe UI;
+    pointer-events: none;
+    transition:1s;
+    animation:pojawiasie 3s;
+    transform-origin: top; 
+
+}
+.napis3
+{
+    
+    font-size:20px;
+}
+.napis:hover
+{
+    line-height: 100%;
+}
+
+
+
+@media screen and (max-width: 1100px){
+
+.napis2{top:30%; right:25%; left:25%;}
+
+}
+

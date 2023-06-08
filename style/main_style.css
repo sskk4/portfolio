@@ -1,0 +1,84 @@
+.menu
+{
+    position:relative;
+    z-index:50;
+    top:50%;
+    margin-left:1%;
+    
+}
+.menu-wskaznik
+{
+    border-radius:15px;
+    height: 7px;
+   background-color:white;
+    width:3%;
+    margin-top:3%;
+    transition:0.5s;
+    cursor:pointer;
+    animation:wjezdza_z_lewej 2.9s, pojawiasie 1s;
+    transform-origin: left; 
+}
+
+@keyframes wjezdza_z_lewej {
+
+    0%{width:0%; }
+    90%{width:0%;}
+    100%{width:3%;}
+    
+}
+
+@keyframes wjezdza_z_lewej_biezacy {
+
+    0%{transform:scaleX(0);}
+    90%{transform:scaleX(0);}
+    100%{transform:scaleX(1.5);}
+    
+}
+
+#wskaznik-on
+{
+    transform:scaleX(1.5);
+    pointer-events: none;
+    animation:wjezdza_z_lewej_biezacy 3s, pojawiasie 1s;
+}
+
+.menu-wskaznik:hover
+{
+ transform: scaleX(1.5);
+}
+
+@keyframes schowaj
+{
+    0%{bottom:0;}
+    100%{bottom:-100%;}
+}
+
+@keyframes chowasie
+{
+    to{transform:scaleX(0); }
+}
+
+@keyframes znika
+{
+    to{opacity:0;}
+}
+
+@keyframes chowasie2
+{
+    to{width:0; height: 0; }
+}
+
+@keyframes chowa_napis
+{
+    to{font-size:0; }
+}
+
+@keyframes zmienia_kolor_napisu
+{
+    to{color:#e66b8e;}
+}
+
+@keyframes zmienia_kolor_tla
+{
+    to{background-color: #b99cbe;}
+}
